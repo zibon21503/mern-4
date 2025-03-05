@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Student registration form</h3>
+    <h1>Please enter relevent information</h1>
+    <hr>
+    <form action="">
+        <span>Mandatory Field*</span>
+    <label for="district">District (Institute District: Where you want to do your course)*</label><br>
+    <select id="district" name="district">
+        <option value="select" selected disabled>--select one--</option>
+        <option value="dhaka">dhaka</option>
+        <option value="rajshahi">rajshahi</option>
+        <option value="bogura">bogura</option>
+        <option value="sirajganj">sirajganj</option>
+      </select><br><br>
+
+      <label for="course">course*</label><br>
+    <select id="course" name="course">
+        <option value="select" selected disabled>--select one--</option>
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="BBA">BBA</option>
+        <option value="pharmacy">pharmacy</option>
+      </select><br><br>
+
+      <label for="name">Student Name*</label><br>
+      <input type="text"><br><br>
+
+      <label for="fname">Father Name*</label><br>
+      <input type="text"><br><br>
+
+      <label for="mname">Mother Name*</label><br>
+      <input type="text"><br><br>
+
+      <label for="DOB">Date of birth:*</label><hr>
+
+      <label for="day">Day: </label>
+    <select id="day" name="day">
+        <option value="select" selected disabled>--select one--</option>
+        <option value="sat">saturday</option>
+        <option value="sun">sunday</option>
+        <option value="mon">monday</option>
+        <option value="tue">tuesday</option>
+        <option value="wed">wednessday</option>
+        <option value="thu">thursday</option>
+        <option value="fri">friday</option>
+    </select>
+
+      <label for="month">Month: </label>
+    <select id="month" name="month">
+        <option value="select" selected disabled>--select one--</option>
+        <option value="jan">january</option>
+        <option value="feb">february</option>
+        <option value="mar">march</option>
+        <option value="apr">april</option>
+        <option value="may">may</option>
+        <option value="jun">june</option>
+        <option value="jul">july</option>
+        <option value="aug">august</option>
+        <option value="sep">september</option>
+        <option value="oct">october</option>
+        <option value="nov">november</option>
+        <option value="dec">december</option>
+      </select>
+      
+      <label for="year">Year: </label>
+    <select id="year" name="year">
+        <option value="select" selected disabled>--select one--</option>
+        <option value="year">1999</option>
+        <option value="year">2000</option>
+        <option value="year">2001</option>
+        <option value="year">2002</option>
+        <option value="year">2003</option>
+        <option value="year">2004</option>
+        <option value="year">2005</option>
+      </select>
+      <br><br>
+
+      <!-- error: cannot load value -->
+      <label for="gender">Gender*</label><br>
+      <input type="radio" name="male" id="male" value="Male">
+      <label for="">male</label><br>
+      <input type="radio" name="female" id="female" value="Female">
+      <label for="female">female</label><br><br>
+
+      <label for="email">Email:*</label><br>
+      <input type="email" name="email" id="email" placeholder="(e.g: example@mail.com)"><br><br>
+
+      <label for="phonenumber">Phone(Must be 11 Digits)*</label><br>
+      <input type="number" name="number" id="number" placeholder="(e.g:0155123456)"><br><br>
+
+      <label for="id">Identification Type*</label><br>
+      <select name="id" id="id">
+        <option value="select" selected disabled>--Select One--</option>
+        <option value="One">One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+        <option value="Four">Four</option>
+        <option value="Five">Five</option>
+      </select><br><br>
+
+      <label for="id">Identification No. (Must be 10 digits for new NID or 17 digits for old NID. If your National ID is 13 digits, then please add
+        your birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*</label><br>
+        <input type="number" name="" id=""><br><br>
+
+        <label for="">Home District*</label><br>
+        <select name="" id="">
+            <option value="selected" selected disabled>--select one--</option>
+            <option value="dhaka">dhaka</option>
+            <option value="rajshahi">rajshahi</option>
+            <option value="bogura">bogura</option>
+            <option value="sirajganj">sirajganj</option>
+        </select><br><br>
+
+        <label for="">Upazila*</label><br>
+        <select name="" id="">
+            <option value="selected" selected disabled>--select one--</option>
+            <option value="tarash">tarash</option>
+            <option value="rayganj">rayganj</option>
+            <option value="belkuchi">belkuchi</option>
+            <option value="solonga">solonga</option>
+        </select><br><br>
+
+        <label for="">Village/House No./Road No./Other Alternative*</label><br>
+        <input type="text"><br><br>
+
+        <label for="">Post Office*</label><br>
+        <input type="text"><br><br>
+
+        <label for="">Educational Qualification* (Higher Level)</label><br>
+        <select name="" id="">
+            <option value="select" selected disabled>--Select One--</option>
+            <option value="" >SSC</option>
+            <option value="" >HSC</option>
+            <option value="" >BSC</option>
+            <option value="" >BBA</option>
+            <option value="" >MBA</option>
+        </select><br><br>
+
+        <label for="">Have any computer?*</label><br>
+        <input type="radio" name="" id="">YES <br>
+        <input type="radio" name="" id="">NO <br><br>
+
+        <label for="">Photograph*</label><br>
+        <input type="file" name="" id=""><br>
+        <span>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</span>
+        <br><br>
+
+        <label for="">Signature*</label><br>
+        <input type="file" name="" id=""><br>
+        <span>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</span>
+        <br><br>
+
+        <button type="submit">Submit Data</button>
+    </div>
+
+
+
+    </form>
+</body>
+</html>
